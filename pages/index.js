@@ -26,14 +26,18 @@ export default function Home({ story, preview }) {
   );
 }
  
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
+  // get the query object
+  const insideStoryblok = context.query._storyblok;
+  const shouldLoadDraft = context.preview || insideStoryblok;
+ 
   let slug = "home";
  
   let sbParams = {
-    version: "published",
+    version: "published", // or 'draft'
   };
  
-  if (context.preview) {
+  if (shouldLoadDraft) {
     sbParams.version = "draft";
   }
  
@@ -44,8 +48,7 @@ export async function getStaticProps(context) {
     props: {
       story: data ? data.story : false,
       key: data ? data.story.id : false,
-      preview: context.preview || false,
+      preview: shouldLoadDraft || false,
     },
-    revalidate: 3600,
   };
 }
