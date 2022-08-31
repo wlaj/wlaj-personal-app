@@ -7,8 +7,10 @@ import {
 } from "@storyblok/react";
 import Layout from "../components/Layout";
  
-export default function Home({ story, preview }) {
-  story = useStoryblokState(story, {}, preview);
+export default function Home({ story }) {
+  story = useStoryblokState(story, {
+    resolveRelations: ["popular-articles.articles"],
+});
  
   return (
     <div>
@@ -34,7 +36,8 @@ export async function getServerSideProps(context) {
   let slug = "home";
  
   let sbParams = {
-    version: "published", // or 'draft'
+    version: "draft", // or 'published',
+    resolve_relations: ["popular-articles.articles"],
   };
  
   if (shouldLoadDraft) {

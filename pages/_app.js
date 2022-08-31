@@ -7,7 +7,9 @@ import Config from "../components/Config";
 import HeaderMenu from "../components/HeaderMenu";
 import MenuLink from "../components/MenuLink";
 import Hero from '../components/Hero';
-import Article from "../components/Article";
+import AllArticles from '../components/AllArticles';
+import Article from '../components/Article';
+import PopularArticles from '../components/PopularArticles';
  
 const components = {
   feature: Feature,
@@ -17,6 +19,8 @@ const components = {
   config: Config,
   hero: Hero,
   article: Article,
+  "all-articles": AllArticles,
+  "popular-articles": PopularArticles,
   "header_menu": HeaderMenu,
   "menu_link": MenuLink
 };
