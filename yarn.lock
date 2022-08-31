@@ -1407,7 +1407,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.2.0":
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.0.0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -1529,6 +1529,11 @@
   "integrity" "sha512-S0cXKkEqGDibD32K48FFodjeu/+eF++nrHhrLzo/bKxrnyQiPChPccFAnzsJCQ6uMvRuVGZzjKwM5/sMeBRthg=="
   "resolved" "https://registry.npmjs.org/storyblok-js-client/-/storyblok-js-client-4.5.6.tgz"
   "version" "4.5.6"
+
+"storyblok-rich-text-react-renderer@^2.6.0":
+  "integrity" "sha512-XFF6YnVJm2RpxvLTrDuBi+i0Oes/nIvY9LwR9ADNV/M596+a7j7YV6uzz+kTU3GFDXCXF2Th3q2hmcblXCTDWg=="
+  "resolved" "https://registry.npmjs.org/storyblok-rich-text-react-renderer/-/storyblok-rich-text-react-renderer-2.6.0.tgz"
+  "version" "2.6.0"
 
 "string.prototype.matchall@^4.0.7":
   "integrity" "sha512-f48okCX7JiwVi1NXCVWcFnZgADDC/n2vePlQ/KUCNqCikLLilQvwjMO8+BHVKvgzH0JB0J9LEPgxOGT02RoETg=="

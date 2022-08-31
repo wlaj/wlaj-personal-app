@@ -13,7 +13,8 @@
     "axios": "^0.27.2",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "storyblok-rich-text-react-renderer": "^2.6.0"
   },
   "devDependencies": {
     "eslint": "8.22.0",
