@@ -7,7 +7,7 @@ const ArticleTeaser = ({ article }) => {
       <div className="p-6">
         <img
           className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-          src={article.image.filename}
+          src={article.image}
           alt="blog"
         />
         <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">
