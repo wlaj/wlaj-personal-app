@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html,
 body {
   padding: 0;
@@ -11,6 +7,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  @apply text-red-500
 }
 
 * {
