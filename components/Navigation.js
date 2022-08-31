@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Link from "next/link";
+import { useState } from 'react';
+import Link from 'next/link';
 const Navigation = () => {
   const [openMenu, setOpenMenu] = useState(false);
- 
+
   return (
     <div className="relative bg-white border-b-2 border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -13,12 +13,12 @@ const Navigation = () => {
                 <span className="sr-only">Storyblok</span>
                 <img
                   className="h-20 w-auto sm:h-10 hidden sm:block"
-                  src='https://a.storyblok.com/f/88751/251x53/0d3909fe96/storyblok-primary.png'
+                  src="https://a.storyblok.com/f/88751/251x53/0d3909fe96/storyblok-primary.png"
                   alt="Storyblok"
                 />
                 <img
                   className="h-20 w-auto sm:h-10 sm:hidden"
-                  src='https://a.storyblok.com/f/88751/92x106/835caf912a/storyblok-logo.png'
+                  src="https://a.storyblok.com/f/88751/92x106/835caf912a/storyblok-logo.png"
                   alt="Storyblok"
                 />
               </a>
@@ -53,26 +53,23 @@ const Navigation = () => {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 space-x-10">
             <Link href="/about">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                
                 About
               </a>
             </Link>
             <Link href="/blog">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                
                 Blog
               </a>
             </Link>
             <Link href="/services">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                
                 Services
               </a>
             </Link>
           </div>
         </div>
       </div>
- 
+
       {/* <!--
         Mobile menu, show/hide based on mobile menu state.
       --> */}
@@ -120,7 +117,6 @@ const Navigation = () => {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       {/* <!-- Heroicon name: outline/chart-bar --> */}
                       <span className="ml-3 text-base font-medium text-gray-900">
-                        
                         About
                       </span>
                     </a>
@@ -129,7 +125,6 @@ const Navigation = () => {
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       {/* <!-- Heroicon name: outline/cursor-click --> */}
                       <span className="ml-3 text-base font-medium text-gray-900">
-                        
                         Blog
                       </span>
                     </a>
@@ -137,7 +132,6 @@ const Navigation = () => {
                   <Link href="/services">
                     <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                       <span className="ml-3 text-base font-medium text-gray-900">
-                        
                         Services
                       </span>
                     </a>
@@ -151,5 +145,5 @@ const Navigation = () => {
     </div>
   );
 };
- 
+
 export default Navigation;
