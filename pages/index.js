@@ -15,7 +15,7 @@ export default function Home({ story }) {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>WLAJ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>

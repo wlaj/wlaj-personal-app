@@ -7,4 +7,4 @@ const MenuLink = ({blok}) => (
        </a>
    </Link>
 )
-export default MenuLink
+export default MenuLink 
